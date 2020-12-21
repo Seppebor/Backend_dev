@@ -1,0 +1,33 @@
+<?php
+	$isbad = true;
+	$x = rand(0,9);
+	if($x >= 4)
+	{
+		$isbad = false;
+	}
+	else
+	{
+		$isbad = true;
+	}
+	$praesidium = ["Egbert", "Francis", "Anthony", "Rhomi", "Laura", "Fleur", "Liesl", "Jana", "Joris", "Cédric", "Seppe", "Wietse", "Sander", "Sander GPS", "Vedran"];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>loops &amp; conditionals</title>
+</head>
+<body>
+	<?php if($isbad): ?>
+	<h1>It's very bad!</h1>
+	<?php else: ?>
+	<h1>It's very good!</h1>
+	<?php endif ?>
+	
+	<ul>
+		<?php foreach ($praesidium as $praesidium): ?> 
+			<li><?= $praesidium ?></li>
+		<?php endforeach ?>
+	</ul>
+</body>
+</html>
