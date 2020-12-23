@@ -1,0 +1,20 @@
+<?php
+$x = 1;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>opdracht 5</title>
+</head>
+<body>
+	<?php while($x < 11): ?>
+		<?php if($x % 2 == 0): ?>
+		<p>Is even</p>
+		<?php else: ?>
+		<p>not even</p>
+		<?php endif; ?>
+		<?php $x++; ?>
+	<?php endwhile; ?>	
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?php
+$x = 1;
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>opdracht 4</title>
+</head>
+<body>
+	<?php while($x < 20): ?>
+	<p>
+		<?php $y = 0; ?> 
+		<?php while($y < $x): ?>
+			<span>*</span>
+		<?php $y++; ?> 
+		<?php endwhile; ?>
+		<?php $x++; ?>
+	</p>
+	<?php endwhile; ?>
+</body>
+</html>

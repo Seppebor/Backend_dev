@@ -1,0 +1,13 @@
+<?php
+	$text = "Hello World";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>opdracht 1</title>
+</head>
+<body>
+	<h1><?php echo $text ?></h1>
+</body>
+</html>
