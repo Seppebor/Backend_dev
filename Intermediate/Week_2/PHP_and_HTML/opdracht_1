@@ -1,0 +1,21 @@
+<?php
+$praesidium = ["Rhomi", "Sander J", "Liesl", "Fleur", "Jana", "Francis", 
+"Seppe", "Joris", "Sander GPS", "Vedran", "Cédric", "Daani", "Anthony", 
+"Wietse", "Laura", "Egbert"]
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Opdracht 1</title>
+</head>
+
+<body>
+	<h1>Praesidium leden van Magistra:</h1>
+	<ul>
+		<?php foreach ($praesidium as $praesidium): ?>
+			<li><?= $praesidium ?></li>
+		<?php endforeach; ?>
+	</ul>
+</body>
+</html>
