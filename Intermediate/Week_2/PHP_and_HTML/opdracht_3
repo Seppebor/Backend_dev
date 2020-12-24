@@ -1,0 +1,31 @@
+<?php
+$number = rand(1,5);
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>opdracht 3</title>
+</head>
+<body>
+	<?php switch($number): case 1: ?>
+			<h1>It's 1</h1>
+		<?php break; ?>
+		<?php case 2: ?>
+			<h2>It's 2</h2>
+		<?php break; ?>
+		<?php case 3: ?>
+			<h3>It's 3</h3>
+		<?php break; ?>
+		<?php case 4: ?>
+			<h4>It's 4</h4>
+		<?php break; ?>
+		<?php case 5: ?>
+			<h5>It's 5</h5>
+		<?php break; ?>
+		<?php default: ?>
+			<p>ERROR</p>
+		<?php break; ?>
+	<?php endswitch; ?>
+</body>
+</html>
