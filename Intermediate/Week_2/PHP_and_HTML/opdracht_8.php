@@ -1,7 +1,6 @@
 <?php 
-$output;
 $cars = array (
-	array("Mercedes","rood","M-klasse"),
+	array("Mercedes","rood","m-klasse"),
 	array("Mercedes","wit","r-klasse"),
 	array("Mercedes","rood","r-klasse"),
 	array("BMW","wit","X1"),
@@ -11,6 +10,22 @@ $cars = array (
 	array("Audi","zwart","A3"),
 	array("Audi","zwart","A1"),
 );
+if($_GET['choice'] == 'Mercedes' || $_GET['choice'] == 'Audi' || 
+$_GET['choice'] == 'BMW')
+{
+	$_GET['brand'] = $_GET['choice'];
+}
+else if($_GET['choice'] == 'rood' || $_GET['choice'] == 'wit' || 
+$_GET['choice'] == 'zwart' || $_GET['choice'] == 'geel')
+{
+	$_GET['color'] = $_GET['choice'];
+}
+else if($_GET['choice'] == 'X1' || $_GET['choice'] == 'X3' || 
+$_GET['choice'] == 'A1' || $_GET['choice'] == 'A3' || $_GET['choice'] == 
+'r-klasse' || $_GET['choice'] == 'm-klasse')
+{
+	$_GET['model'] = $_GET['choice'];
+}
 ?>
 
 <!DOCTYPE html>
