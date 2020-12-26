@@ -1,0 +1,16 @@
+<?php
+session_start();
+$input = $_SESSION["fruit"];
+?>
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Opracht 9</title>
+</head>
+
+<body>
+	<p>Ik hou van een <?php echo $input; ?></p>
+</body>
+</html>
