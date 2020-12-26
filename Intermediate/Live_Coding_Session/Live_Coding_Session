@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Live coding session</title>
+</head>
+
+<body>
+	<h1>Contactformulier</h1>
+	<form method="POST" action="mailer.php">
+		<label for="first_name">Voornaam</label><br>
+		<input type="text" name="first_name" id="first_name"><br>
+		
+		<label for="last_name">Achternaam</label><br>
+		<input type="text" name="last_name" id="last_name"><br>
+		
+		<label for="date_of_birth">Geboortedatum</label><br>
+		<input type="date" name="date_of_birth" id= "date_of_birth"><br>
+		
+		<label type="question_type">Ik heb een vraag over...</label><br>
+		<select name="question_type" id="question_type">
+			<option value="lorem">Lorem</option>
+			<option value="ipsum">Ipsum</option>
+			<option value="dolor">Dolor</option>
+		</select><br>
+		
+		<label for="question">Vraag</label><br>
+		<textarea name="question" id="question"></textarea><br><br>
+		
+		<button>Verzenden</button>
+	</form>
+</body>
+</html>

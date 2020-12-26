@@ -1,0 +1,21 @@
+<?php
+session_start();
+
+$fields = ['first_name', 'last_name', 'date_of_birth', 'question_type', 'question'];
+$formData = $_POST;
+$_SESSION['errors'] = [];
+
+	
+foreach($fields as $field)
+{
+	if(!validateNotEmpty($formData, $field))
+	{
+		array_push($_SESSION['errors'], "$field cannot be empty");
+	}
+}
+function validateNotEmpty($formData,$field)
+{
+	return isset($formData[$field]);
+}
+
+?>
